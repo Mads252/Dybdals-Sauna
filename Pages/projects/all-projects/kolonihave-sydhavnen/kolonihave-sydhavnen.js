@@ -10,7 +10,7 @@ function getCardsToShow() {
         return 1.5; // Show 1.5 cards at a time on larger screens
     }
 }
-
+//test
 // Function to show a specific slide
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-card');
