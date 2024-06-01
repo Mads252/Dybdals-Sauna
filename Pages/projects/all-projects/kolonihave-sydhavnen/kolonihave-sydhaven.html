@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- noindex, nofollow-->
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../../../home/home.css">
+    <link rel="stylesheet" href="kolonihave-sydhaven.css">
+    <script src="../kolonihave-sydhavnen/kolonihave-sydhavnen.js" defer></script>
+    <script src="../../../home/home.js" defer></script>
+    <script src="https://kit.fontawesome.com/d3f2b1c0ec.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="header">
+
+        <nav class="nav container">
+            <!-- Logo and home button-->
+            <a href="../../../home/home.html" class="navLogo">
+                <img id="navLogo" src="../../../../img/symbols/original-logo-white.png" alt="">
+            </a>
+            <!--navigation menu for both hamburgerMenu(mobile/tablet) and pc -->
+            <div class="navMenu" id="nav-menu">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="../../../home/home.html" class="navLink ">Hjem</a>
+                    </li>
+    
+                    <li class="navItem">
+                        <a href="../../projects.html" class="navLink active-link">Projekter</a>
+                    </li>
+    
+                    <li class="navItem">
+                        <a href="../../../team/team.html" class="navLink">Team</a>
+                    </li>
+    
+                    <li class="navItem">
+                        <a href="../../../ contactForm/contactForm.html" class="navLink">Kontakt</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="../../../reviews/reviews.html" class="navLink">Anmedelser</a>
+                    </li>
+                </ul>
+    
+                <!-- Min lukke knap til min hamburger-->
+                <div class="navClose" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+    
+            <!-- Hamburger button-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <nav class="breadcrumb">
+        <a href="../../../home/home.html">Hjem</a> &gt; 
+        <a href="../../projects.html">Projekter</a> &gt; 
+        Strandvejs villa i Odsherred
+    </nav>
+    <!-- Section for the upper part of the page -->
+<section class="øversteSection">
+    <div class="øversteContainer">
+        <!-- Container for the picture -->
+        <figure class="pictureContainer">
+            <img src="../../../../img/sauna-projects/villa-broenbystrand.jpeg" alt="Villa ved Brøndby strand" class="pictureContainerPicture">
+        </figure>
+        <!-- Container for the text content -->
+        <div class="tekstContainer">
+            <h1>Strandvejs villa i Odsherred</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <br>
+            <h6>Pris <br><br>20.000 kr</h6>
+        </div>
+    </div>
+</section>
+
+<!-- Section for the carousel -->
+<section style="margin-top: 100px;">
+    <div class="carousel-container">
+        <!-- Previous slide button -->
+        <button class="carousel-button prev" onclick="prevSlide()">&#8592;</button>
+        <!-- Carousel track container -->
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- Individual carousel cards -->
+                <div class="carousel-card">
+                    <img src="../../../../img/sauna-projects/Kvinde-i-sauna.jpg" alt="Billede 1">
+                </div>
+                <div class="carousel-card">
+                    <img src="../../../../img/sauna-projects/2-kvinder-i-sauna.jpg" alt="Billede 2">
+                </div>
+                <div class="carousel-card">
+                    <img src="../../../../img/sauna-projects/big-sauna-remove.jpg" alt="Billede 3">
+                </div>
+            </div>
+        </div>
+        <!-- Next slide button -->
+        <button class="carousel-button next" onclick="nextSlide()">&#8594;</button>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="footerContainer">
+            <div class="footerBlock">
+                <h2>Generelt</h2>
+                <ul>
+                    <li><a href="#">Om Dybdals Sauna</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Karriere</a></li>
+                    <li><a href="#">Nyhedsbrev</a></li>
+                </ul>
+            </div>
+            <div class="footerBlock">
+                <h2>Info</h2>
+                <ul>
+                    <li><a href="#">Cookies- & privatlivspolitik</a></li>
+                    <li><a href="#">Vilkår og betingelser</a></li>
+                </ul>
+            </div>
+            <div class="footerBlock">
+                <h2>Dybdals Sauna</h2>
+                <ul>
+                    <li>+45 52 30 40 31</li>
+                    <li>mail@example.com</li>
+                    <li>CVR: 15976543</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

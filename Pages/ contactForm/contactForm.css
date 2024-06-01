@@ -1,0 +1,88 @@
+
+ 
+  
+
+  body{
+    background-image: url(../../img/bg-pictures/contactFormBg.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.formFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contactForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.contactFormContainer{
+    margin-top: 3%;
+    width: 80vw;
+    height: 550px;
+    background-color: rgba(var(--Signature-Dark-Blue-RGB), 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contactFormFields{
+    margin-top: 5px;
+    width: 70vw;
+    max-width: 500px;
+    height: 30px;
+    border-radius: 12px;
+    border: 0;
+    padding-left: 7px;
+}
+
+#description{
+    margin-top: 5px;
+    width: 70vw;
+    max-width: 500px;
+    border-radius: 12px;
+    border: 0;
+    padding-top: 2px;
+    padding-left: 7px;
+}
+.contactBlock{
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+    display: flex;
+   
+    
+
+}
+
+
+
+
+#submitForm{
+    border-radius: 12px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+h1{
+    font-size: 30px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: var(--Solid-Grey);
+    border-radius: 20px;
+    border-style: hidden;
+    color: white;
+    width: 151px;
+    height: 50px;
+}
+
+
+
+

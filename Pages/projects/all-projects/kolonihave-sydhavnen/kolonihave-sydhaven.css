@@ -1,0 +1,138 @@
+
+.carousel-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: -20px;
+}
+
+.carousel {
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-card {
+    flex: 0 0 66.6667%; 
+    box-sizing: border-box;
+    
+}
+
+.carousel-card img {
+    width: 100%;
+    height: calc(100vh - 20px); 
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    color: #000000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    width: 100px;
+    height: 100px;
+}
+
+
+.carousel-button.prev, .carousel-button.next{
+    
+    font-size: 60px; 
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+    
+}
+.øversteContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+   padding-top: 5vh;
+    
+}
+.pictureContainer{
+    width: 40vw;
+}
+.pictureContainerPicture{
+    width: 35vw;
+}
+
+.tekstContainer{
+    width: 40vw;
+
+}
+
+.tekstContainer p{
+    font-family: "Inter", sans-serif;
+}
+.breadcrumb {
+    padding: 10px 0;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 20vh;
+    margin-left: 5vw;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb a:not(:last-child)::after {
+    content: ">";
+    margin: 0 5px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .carousel-card {
+        flex: 0 0 100%; 
+    }
+    .øversteContainer{
+        align-items: center;
+        flex-direction: column;
+    }
+    .pictureContainer{
+        width: 80vw;
+    }
+    .pictureContainerPicture{
+        width: 80vw;
+    }
+    .tekstContainer{
+        width: 80vw;
+    
+    }
+}
+
+
+
+
+
+
+
