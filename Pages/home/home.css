@@ -1,3 +1,8 @@
+
+
+/* We have used ":root" in CSS is used to define global variables, making it easy to reuse values like
+colors or font sizes throughout your stylesheet. It provides a central place to manage key design elements, 
+improving code organization and maintenance.*/
 :root {
 	--Easy-Grey: #d9d9d9;
 	--Royal-Blue: #222f52;
@@ -7,6 +12,8 @@
 	--Signature-Dark-Blue-RGB: 18, 32, 56;
 	--Gold: #FFD700;
 }
+
+
 @font-face {
     font-family: 'TiemposHeadlineMedium';
 	src: url('../../fonts/tiempos-headline/TiemposHeadline-Medium.otf') format('opentype'),
