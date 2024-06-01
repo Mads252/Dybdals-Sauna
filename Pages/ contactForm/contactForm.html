@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- noindex, nofollow-->
+   <meta name="robots" content="noindex, nofollow">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactForm.css">
+    <link rel="stylesheet" href="../home/home.css">
+    <script src="https://kit.fontawesome.com/d3f2b1c0ec.js" crossorigin="anonymous"></script>
+    <script src="../home/home.js" defer></script>
+
+</head>
+<body>
+    <header class="header" id="header">
+
+        <nav class="nav container">
+            <!-- Logo and home button-->
+            <a href="../home/home.html" class="navLogo">
+                <img id="navLogo" src="../../img/symbols/original-logo-white.png" alt="">
+            </a>
+            <!--navigation menu for both hamburgerMenu(mobile/tablet) and pc -->
+            <div class="navMenu" id="nav-menu">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="../home/home.html" class="navLink">Hjem</a>
+                    </li>
+    
+                    <li class="navItem">
+                        <a href="../projects/projects.html" class="navLink">Projekter</a>
+                    </li>
+    
+                    <li class="navItem">
+                        <a href="../team/team.html" class="navLink">Team</a>
+                    </li>
+    
+                    <li class="navItem">
+                        <a href="../ contactForm/contactForm.html" class="navLink active-link">Kontakt</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="../reviews/reviews.html" class="navLink">Anmedelser</a>
+                    </li>
+                </ul>
+    
+                <!-- Min lukke knap til min hamburger-->
+                <div class="navClose" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+    
+            <!-- Hamburger button-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="contactForm">
+        <!-- Conatiner for contact form -->
+        <div class="contactFormContainer">
+            <!-- Form title -->
+            <h2>Kontakt os</h2>
+            <!-- Form starts, sends data to contact.php using POST method -->
+            <form action="contact.php" method="post" class="formFlex">
+                <!-- Block for name input -->
+                <div class="contactBlock">
+                    <label for="name">Dit navn</label>
+                    <input type="text" id="name" name="name" class="contactFormFields" placeholder="Navn" required >
+                </div>
+                <!-- Block for email input -->
+                <div class="contactBlock">
+                    <label for="email">Din E-mail</label>
+                    <input type="email" id="email" name="email" class="contactFormFields" placeholder="mail@mail.dk" required>
+                </div>
+                <!-- Block for phone number input -->
+                <div class="contactBlock">
+                    <label for="phone">Dit telefon nummer</label>
+                    <input type="tel" id="phone" name="phone" class="contactFormFields" placeholder="+45 43 34 43 34">
+                </div>
+                <!-- Block for message input -->
+                <div class="contactBlock">
+                    <label for="description">Besked</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Beskrivelse:" required></textarea>
+                </div>
+                <!-- Submit button for the form -->
+                <button type="submit" id="submitForm">Send hendvendelse</button>
+            </form>
+        </div>
+    </section>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+        .containerTeams{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .profilePictures{
+            width: 290px;
+            height: 375px;
+            background-color: deeppink;
+        }
+       .profileContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+       }
+
+       .profileBlock{
+        margin: 50px;
+       }
+
+
+       .dumKlasse{
+        margin-left: 10vw; margin-right: 10vw; padding-top: 100px;
+       }
+
+       .dumKlasseP{
+        padding-top: 15px;
+        padding-bottom: 15px;
+      
+            font-family: "Inter", sans-serif;
+        
+       }
+
+       a{
+        text-decoration: none;
+        color: inherit;
+       }

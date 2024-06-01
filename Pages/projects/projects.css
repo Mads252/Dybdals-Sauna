@@ -1,0 +1,38 @@
+
+.block{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.blockImg{
+        width: 450px;
+        height: 450px;
+        background-color: white;
+}
+.blockHead{
+    color: white;
+    font-size: 30;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blockP{
+    color: white;
+    font-size: 12px;
+    width: 350px;
+    padding-bottom: 20px;
+    font-family: "Inter", sans-serif;
+
+}
+.blockBtn{
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: large;
+    background-color: var(--Solid-Grey);
+    border-style: hidden;
+    cursor: pointer;
+}
+
+

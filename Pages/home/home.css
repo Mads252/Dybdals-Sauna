@@ -1,0 +1,438 @@
+:root {
+	--Easy-Grey: #d9d9d9;
+	--Royal-Blue: #222f52;
+	--Solid-Grey: #9ba4b3;
+	--Spicy-Sand-Beige: #bda78c;
+	--Signature-Dark-Blue: #122038;
+	--Signature-Dark-Blue-RGB: 18, 32, 56;
+	--Gold: #FFD700;
+}
+@font-face {
+    font-family: 'TiemposHeadlineMedium';
+	src: url('../../fonts/tiempos-headline/TiemposHeadline-Medium.otf') format('opentype'),
+    
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+  
+  
+  @font-face {
+    font-family: 'TiemposHeadlineMediumItalic';
+	src: url('../../fonts/tiempos-headline/TiemposHeadline-MediumItalic.otf') format('opentype'),
+    
+  }
+
+
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'TiemposHeadlineMedium', sans-serif;
+	
+}
+
+html {
+	scroll-behavior: smooth;
+	touch-action: manipulation;
+}
+
+/*maaaaaaaaads husk at slætte husk farven 222F52*/
+
+h1{
+	margin-top: 20%; text-align: center; font-size: 60px; color: white;
+}
+
+
+
+.homeBox{
+	width: 45%;
+	padding-top: 5vh;
+}
+
+.homeBox p {
+	font-family: "Inter", sans-serif;
+}
+.container {
+	margin-inline: 1.5rem;
+	padding-bottom: 10px;
+	
+
+}
+
+.navLogo{
+	padding-bottom: 2vh;
+}
+@media screen and (max-width: 1023px) {
+
+	
+	.navMenu {
+		position: fixed;
+		top: 0;
+		right: -100%;
+        backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		width: 75%;
+		height: 100%;
+		padding-top: 4.5rem;
+		transition: right .4s;
+		
+
+	}
+	.navList {
+		align-items: center;
+	}
+	.header{
+	
+		padding-bottom: 10px;
+	}
+	#navLogo{
+		width: 200px;
+		padding-top: 3vh;
+	}
+	
+	
+	
+}
+
+body {
+	color: white;
+	background-color: var(--Signature-Dark-Blue);
+}
+ul {
+	list-style: none;
+	
+}
+
+.grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.header {
+	padding-top: 10px;
+	position: fixed;
+	width: 100%;
+	background-color: transparent;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(2px); /* Tilføjer en blur-effekt */
+	-webkit-backdrop-filter: blur(2px);
+    z-index: -1; 
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    width: 98%;
+    height: 2px;
+    background-color: white;
+	z-index: -1;
+}
+#navLogo{
+	width: 200px;
+	padding-top: 3vh;
+}
+
+/* Safari and Chrome osv.*/
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    
+    #navLogo {
+        max-width: 200px;
+    }
+}
+#footer-logo{
+	width: 400px;
+	padding: 40px;
+	
+}
+
+#h1-container {
+    position: relative;
+    width: 100%; 
+}
+
+#h1-container p {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    
+	font-size: 60px;
+	text-align: center;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+}
+.nav__toggle,
+.navClose {
+	display: flex;
+	font-size: 1.25rem;
+	color: white;
+	cursor: pointer;
+}
+.navLink{
+	color: white;
+	text-decoration: none;
+}
+.nav__toggle{
+	margin-right: 2rem;
+}
+
+ /* */
+.navList {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3rem;
+}
+.navClose {
+	position: absolute;
+	top: 1rem;
+	right: 3.5rem;
+}
+
+.show-menu {
+	right: 0;
+}
+
+.active-link{
+	color: hsl(42, 60%, 65%);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+}
+
+
+.sectionOne{
+	
+	padding: 5%;
+	background-color: var(--Signature-Dark-Blue);
+	
+}
+.sectionThree{
+	padding: 5%;
+	background-color: var(--Signature-Dark-Blue);
+}
+.sectionOneContainer{
+	margin-top: 10vh;
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+
+.certificeringer{
+	margin-top: 70px;
+	justify-content: center;
+	display: flex;
+}
+.sectionTwo{
+	
+	padding: 5%;
+	background-color: #222F52;
+}
+
+
+footer {
+    height: auto;
+    background-color: var(--Spicy-Sand-Beige);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  	display: flex;
+	flex-direction: column;
+  
+
+}
+footer a, li{
+	font-family: "Inter", sans-serif;
+}
+
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 83%;
+    padding-bottom: 20px; 
+    border-bottom: 3px solid var(--Signature-Dark-Blue);
+    color: var(--Signature-Dark-Blue);
+	
+}
+
+.footerContainer a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.footerBlock {
+    flex: 1;
+    margin: 0 10px; 
+    min-width: 200px; 
+}
+
+.footerBlock h2 {
+    margin-bottom: 10px;
+}
+
+.footerBlock ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.footerBlock ul li {
+    margin-bottom: 5px;
+}
+
+
+.profileBlock p{
+	font-family: "Inter", sans-serif;
+}
+
+form input{
+	font-family: "Inter", sans-serif;
+}
+
+/*styling større enheder */
+@media screen and (min-width: 1023px) {
+	
+	
+	
+	.nav {
+		height: 70px;
+	}
+	.navClose,
+	.nav__toggle {
+		display: none;
+	}
+	.navList {
+		flex-direction: row;
+		column-gap: 3rem;
+	}
+
+	.compMedia{
+		width: 400px;
+
+	}
+	
+
+}
+@media screen and (min-width: 800px){
+	.compMedia{
+		margin-top: 70px; 
+	}
+	
+}
+@media  screen and (min-width: 992px) {
+.proTekst{
+	margin-top: 0;
+	
+}
+}
+@media screen and (max-width: 1000px) {
+	.sectionOneContainer{
+		margin-top: 10vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+	}
+	#h1-container p {font-size: 30px;
+	}
+	.homeBox{
+		width: 80%;
+	}
+
+	#navLogo{
+		margin-top: 3vh;
+		padding-bottom: 1vh;
+	}
+
+	
+	
+}
+@media screen and (max-width: 500px) {
+
+	h1{
+		text-align: center; margin-top: 30%; font-size: 20px; color: white;
+	}
+	#h1-container p {font-size: 20px;
+	}
+	.sectionOneContainer{
+		margin-top: 0vh;
+		
+	}
+
+	.footerContainer {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footerBlock {
+        margin: 10px 0; 
+        width: 100%; 
+        text-align: center; 
+    }
+
+	.certificeringer img{
+		width: 80%;
+	}
+	
+}
+
+
+/* We used GPT for this code because we ran out of time. */
+/* prompt */
+/* jeg skal lave en carrusel med 5 billeder, den på gerne kunne køre hele vejen rundt, samt køre automatisk hvert 3 sekund, og så skal den have en bredde på cirka 80% af skærmens bredde, samt være kodet i html, css og javascript */
+/* prompt */
+
+
+.gpt-carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gpt-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+	padding-top: 40px ;
+}
+
+.gpt-carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.gpt-carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .gpt-carousel-item {
+        min-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gpt-carousel-item {
+        min-width: 33.33%;
+    }
+}
