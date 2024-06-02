@@ -35,4 +35,24 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 500px) {
+    .blockImg{
+        width: 275px;
+        height: 275px;
+        background-color: white;
+}
+
+
+.blockP{
+    
+    width: 240px;
+    
+
+}
+
+.block{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+}
 

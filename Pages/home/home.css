@@ -91,7 +91,7 @@ h1{
 	}
 	.header{
 	
-		padding-bottom: 10px;
+		padding-bottom: 15px;
 	}
 	#navLogo{
 		width: 200px;
@@ -359,7 +359,7 @@ form input{
 		justify-content: center;
 		
 	}
-	#h1-container p {font-size: 30px;
+	#h1-container p {font-size: 40px;
 	}
 	.homeBox{
 		width: 80%;
@@ -373,13 +373,27 @@ form input{
 	
 	
 }
+
+
+#h1-container img{
+	width: 100%; max-width: 100%; height: auto; max-height: 600px;
+}
+
+
 @media screen and (max-width: 500px) {
 
 	h1{
 		text-align: center; margin-top: 30%; font-size: 20px; color: white;
 	}
-	#h1-container p {font-size: 20px;
+	#h1-container p {
+		font-size: 20px;
+		padding-top: 40px;
 	}
+	
+	#h1-container img{
+		 height: 35vh;
+	}
+	
 	.sectionOneContainer{
 		margin-top: 0vh;
 		
@@ -399,6 +413,8 @@ form input{
 	.certificeringer img{
 		width: 80%;
 	}
+	
+	
 	
 }
 
@@ -443,3 +459,4 @@ form input{
         min-width: 33.33%;
     }
 }
+
